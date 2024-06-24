@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Analysis Tool</h1>
+        <div id="upload-section">
+            <h2>Upload Survey Data</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" accept=".csv">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <div id="analysis-section" style="display: none;">
+            <h2>Survey Analysis</h2>
+            <div id="summary"></div>
+            <div id="charts"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
